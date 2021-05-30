@@ -1,4 +1,4 @@
-import 'dart:html';
+// import 'dart:html';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -300,16 +300,31 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.amber,
       ),
       body: Center(
-          child: RaisedButton(
-        child: Text('launch back screen'),
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) {
-              return FirstScreen();
-            }),
-          );
-        },
+          child: Column(
+        children: [
+          SizedBox(
+            height: 200,
+          ),
+          OutlinedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) {
+                  return HomeScreen();
+                }),
+              ); // Respond to button press
+            },
+            child: Container(
+              width: 180,
+              child: Center(
+                child: Text("Activat Mining",
+                    style: TextStyle(
+                      color: Colors.green,
+                    )),
+              ),
+            ),
+          )
+        ],
       )),
       drawer: Drawer(
         // Add a ListView to the drawer. This ensures the user can scroll
@@ -323,7 +338,7 @@ class HomeScreen extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
-              child: Text('Drawer Header'),
+              child: Text('Ibex Coin'),
             ),
             ListTile(
               title: Text('Home'),
@@ -377,32 +392,281 @@ class SettingScreen extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(
-              height: 10,
+              height: 20,
+            ),
+            CircleAvatar(
+              // backgroundColor: Colors.lightBlue,
+              child: const Text('U'),
+            ),
+            SizedBox(
+              height: 30,
             ),
             Center(
               child: Container(
-                width: 300,
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    labelText: 'User Name',
-                    border: OutlineInputBorder(),
-                  ),
+                width: 350,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      child: Text('Full Name'),
+                    ),
+                    Container(
+                      child: Text('Usama'),
+                    )
+                  ],
                 ),
               ),
+            ),
+            SizedBox(
+              height: 9,
+            ),
+            Divider(
+              indent: 16,
+              endIndent: 16,
+            ),
+            Center(
+              child: Container(
+                width: 350,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      child: Text('Full Name'),
+                    ),
+                    Container(
+                      child: Text('Usama'),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 9,
+            ),
+            Divider(
+              indent: 16,
+              endIndent: 16,
+            ),
+            Center(
+              child: Container(
+                width: 350,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      child: Text('Username'),
+                    ),
+                    Container(
+                      child: Text('Usama15'),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 9,
+            ),
+            Divider(
+              indent: 16,
+              endIndent: 16,
+            ),
+            Center(
+              child: Container(
+                width: 350,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      child: Text('Invition Code'),
+                    ),
+                    Container(
+                      child: Text('Coming Soon'),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 9,
+            ),
+            Divider(
+              indent: 16,
+              endIndent: 16,
+            ),
+            Center(
+              child: Container(
+                width: 350,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      child: Text('Referral Link to Share'),
+                    ),
+                    Container(
+                      child: Text('Coming Soon'),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 9,
+            ),
+            Divider(
+              indent: 16,
+              endIndent: 16,
+            ),
+            Center(
+              child: Container(
+                width: 350,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      child: Text('Phone Number'),
+                    ),
+                    Container(
+                      child: Text('+93201234567'),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 9,
+            ),
+            Divider(
+              indent: 16,
+              endIndent: 16,
+            ),
+            Center(
+              child: Container(
+                width: 350,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      child: Text('Email'),
+                    ),
+                    Container(
+                      child: Text('Coming Soon'),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 9,
+            ),
+            Divider(
+              indent: 16,
+              endIndent: 16,
+            ),
+            Center(
+              child: Container(
+                width: 350,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      child: Text('Facebook'),
+                    ),
+                    Container(
+                      child: Text('Coming Soon'),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 9,
+            ),
+            Divider(
+              indent: 16,
+              endIndent: 16,
+            ),
+            Center(
+              child: Container(
+                width: 350,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      child: Text('Second Currency'),
+                    ),
+                    Container(
+                      child: Text('Coming Soon'),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 9,
+            ),
+            Divider(
+              indent: 16,
+              endIndent: 16,
+            ),
+            Center(
+              child: Container(
+                width: 350,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      child: Text('White Paper'),
+                    ),
+                    Container(
+                      child: Text('Coming Soon'),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 9,
+            ),
+            Divider(
+              indent: 16,
+              endIndent: 16,
+            ),
+            Center(
+              child: Container(
+                width: 350,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      child: Text('FAQ'),
+                    ),
+                    Container(
+                      child: Text('Coming Soon'),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 9,
+            ),
+            Divider(
+              indent: 16,
+              endIndent: 16,
             ),
             OutlinedButton(
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) {
-                    return HomeScreen();
+                    return FirstScreen();
                   }),
                 ); // Respond to button press
               },
               child: Container(
                 width: 100,
                 child: Center(
-                  child: Text("Finish",
+                  child: Text("LogOut",
                       style: TextStyle(
                         color: Colors.amber,
                       )),
@@ -424,7 +688,7 @@ class SettingScreen extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
-              child: Text('Drawer Header'),
+              child: Text('Ibex Coin'),
             ),
             ListTile(
               title: Text('Home'),
